@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Software Test" default="junit" basedir=".">
     <!-- =================================================================== -->
-    <!-- ±äÁ¿ÉèÖÃ  -->
+    <!-- å˜é‡è®¾ç½®  -->
     <!-- =================================================================== -->
 
-    <!-- Ô´´úÂësrcÂ·¾¶ -->
+    <!-- æºä»£ç srcè·¯å¾„ -->
     <property name="src.path" value="src/java"/>
-    <!-- µ¥Ôª²âÊÔ´úÂëÂ·¾¶ -->
+    <!-- å•å…ƒæµ‹è¯•ä»£ç è·¯å¾„ -->
     <property name="test.path" value="src/test"/>
-    <!-- ±àÒëÎÄ¼þclassÂ·¾¶ -->
+    <!-- ç¼–è¯‘æ–‡ä»¶classè·¯å¾„ -->
     <property name="build.path" value="build"/>
-    <!-- jar°üÂ·¾¶ -->
+    <!-- jaråŒ…è·¯å¾„ -->
     <property name="dist.path" value="dist"/>
-    <!-- lib°üÂ·¾¶ -->
+    <!-- libåŒ…è·¯å¾„ -->
     <property name="lib.path" value="lib"/>
-    <!-- Éú³É±¨¸æjunit4.xmlÂ·¾¶ -->
+    <!-- ç”ŸæˆæŠ¥å‘Šjunit4.xmlè·¯å¾„ -->
     <property name="report.path" value="report"/>
         
     <!-- =================================================================== -->
-    <!-- ÉèÖÃclasspath -->
+    <!-- è®¾ç½®classpath -->
     <!-- =================================================================== -->
     <path id="compile.path">        
         <fileset dir="${lib.path}">
@@ -28,7 +28,7 @@
         <pathelement path="${build.path}"/>
     </path>     
 
-    <!-- ³õÊ¼»¯ -->
+    <!-- åˆå§‹åŒ– -->
     <target name="init">        
         <mkdir dir="${build.path}"/>
         <mkdir dir="${report.path}"/>
@@ -36,7 +36,7 @@
     </target>
     
     <!-- =================================================================== -->
-    <!-- Çå³ýÀúÊ·±àÒëclass -->
+    <!-- æ¸…é™¤åŽ†å²ç¼–è¯‘class -->
     <!-- =================================================================== -->
     <target name="clean" description="clean">        
         <delete dir="${build.path}"/>
@@ -45,7 +45,7 @@
     </target>
 
     <!-- =================================================================== -->
-    <!-- ±àÒë²âÊÔÎÄ¼þ£¬³õÊ¼»¯Ä¿Â¼ -->
+    <!-- ç¼–è¯‘æµ‹è¯•æ–‡ä»¶ï¼Œåˆå§‹åŒ–ç›®å½• -->
     <!-- =================================================================== -->
     <target name="compile" depends="init">
         <javac srcdir="${src.path}" destdir="${build.path}"  classpathref="compile.path" includeantruntime="true"/>
@@ -53,7 +53,7 @@
     </target>      
          
     <!-- =================================================================== -->
-    <!-- Ö´ÐÐ²âÊÔ°¸Àý -->
+    <!-- æ‰§è¡Œæµ‹è¯•æ¡ˆä¾‹ -->
     <!-- =================================================================== -->
     <target name="junit" depends="compile">                
         <junit printsummary="true" fork="true">        
@@ -70,7 +70,7 @@
      </target>
     
     <target name="junit-report" depends="junit">        
-        <!-- ²úÉúµ¥Ôª²âÊÔ±¨±íÎÄµµ -->
+        <!-- äº§ç”Ÿå•å…ƒæµ‹è¯•æŠ¥è¡¨æ–‡æ¡£ -->
         <junitreport todir="${report.path}">
             <fileset dir="${report.path}">
                 <include name="TEST-*.xml" />
@@ -84,7 +84,7 @@
           <jar jarfile="${dist.path}/Software Test.jar">
                <fileset dir="${build.path}">
 
-                <!--³ýÈ¥testÎÄ¼þ-->
+                <!--é™¤åŽ»testæ–‡ä»¶-->
                 <exclude name="**/*Test.class"/>
                </fileset>
           </jar>
