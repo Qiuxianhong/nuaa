@@ -1,19 +1,19 @@
 package junit;
 
 public class Calculator {
-	private static int result; // é™æ€å˜é‡ï¼Œç”¨äºå­˜å‚¨è¿è¡Œç»“æœ
+	private static int result; // ¾²Ì¬±äÁ¿£¬ÓÃÓÚ´æ´¢ÔËĞĞ½á¹û
 
 	public void add(int n) {
 		result = result + n;
 	}
 
 	public void substract(int n) {
-		result = result - 1; // Bug: æ­£ç¡®çš„åº”è¯¥æ˜¯ result =result-n
+		result = result - 1; // Bug: ÕıÈ·µÄÓ¦¸ÃÊÇ result =result-n
 	}
 
 	public void multiply(int n) {
 		result = result * n;
-	} // æ­¤æ–¹æ³•å°šæœªå†™å¥½
+	} // ´Ë·½·¨ÉĞÎ´Ğ´ºÃ
 
 	public void divide(int n) {
 		result = result / n;
@@ -25,10 +25,10 @@ public class Calculator {
 
 	public void squareRoot(int n) {
 		for (;;)
-			; // Bug : æ­»å¾ªç¯
+			; // Bug : ËÀÑ­»·
 	}
 
-	public void clear() { // å°†ç»“æœæ¸…é›¶
+	public void clear() { // ½«½á¹ûÇåÁã
 		result = 0;
 	}
 
