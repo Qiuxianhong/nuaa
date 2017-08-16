@@ -1,2 +1,0 @@
-# nuaa
-test
