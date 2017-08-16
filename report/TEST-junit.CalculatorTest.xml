@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="LAPTOP-RCG8HKJT" name="junit.CalculatorTest" skipped="0" tests="4" time="0.088" timestamp="2017-08-16T03:04:41">
+<testsuite errors="0" failures="1" hostname="LAPTOP-RCG8HKJT" name="junit.CalculatorTest" skipped="0" tests="4" time="0.08" timestamp="2017-08-16T03:12:12">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="env.MOZ_PLUGIN_PATH" value="C:\Program Files (x86)\Foxit Software\Foxit Reader\plugins\" />
@@ -87,7 +87,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
     <property name="java.class.path" value="D:\程序\eclipse\Software Test\bin;D:\MyDownloads\Download\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar;D:\MyDownloads\Download\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar;D:\MyDownloads\Download\eclipse\plugins\org.apache.ant_1.9.4.v201504302020\lib\ant-launcher.jar;D:\MyDownloads\Download\eclipse\plugins\org.apache.ant_1.9.4.v201504302020\lib\ant.jar;D:\MyDownloads\Download\eclipse\plugins\org.apache.ant_1.9.4.v201504302020\lib\ant-junit.jar;D:\MyDownloads\Download\eclipse\plugins\org.apache.ant_1.9.4.v201504302020\lib\ant-junit4.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner junit.CalculatorTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\程序\eclipse\Software Test\report\TEST-junit.CalculatorTest.xml crashfile=D:\程序\eclipse\Software Test\junitvmwatcher8682574730489850441.properties propsfile=D:\程序\eclipse\Software Test\junit6688503499479157213.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner junit.CalculatorTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\程序\eclipse\Software Test\report\TEST-junit.CalculatorTest.xml crashfile=D:\程序\eclipse\Software Test\junitvmwatcher2976242381457702311.properties propsfile=D:\程序\eclipse\Software Test\junit2385728534951935192.properties" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="env.windir" value="C:\WINDOWS" />
     <property name="env.LOGONSERVER" value="\\LAPTOP-RCG8HKJT" />
@@ -136,13 +136,13 @@
     <property name="env.PROCESSOR_LEVEL" value="6" />
   </properties>
   <testcase classname="junit.CalculatorTest" name="testAdd" time="0.002" />
-  <testcase classname="junit.CalculatorTest" name="testSubstract" time="0.004">
+  <testcase classname="junit.CalculatorTest" name="testSubstract" time="0.005">
     <failure message="expected:&lt;8&gt; but was:&lt;9&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;8&gt; but was:&lt;9&gt;
 	at junit.CalculatorTest.testSubstract(CalculatorTest.java:29)
 </failure>
   </testcase>
   <testcase classname="junit.CalculatorTest" name="testDivide" time="0.0" />
-  <testcase classname="junit.CalculatorTest" name="testMultiply" time="0.0" />
+  <testcase classname="junit.CalculatorTest" name="testMultiply" time="0.001" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
