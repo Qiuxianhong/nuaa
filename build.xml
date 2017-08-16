@@ -13,6 +13,7 @@
     <!-- jar包路径 -->
     <property name="dist.path" value="dist"/>
     <!-- lib包路径 -->
+    
     <property name="lib.path" value="lib"/>
     <!-- 生成报告junit4.xml路径 -->
     <property name="report.path" value="report"/>
